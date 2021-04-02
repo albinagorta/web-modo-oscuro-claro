@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WEB MODO OSCURO Y CLARO</title>
+	<!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<div class="toggle"><i class='bx bx-moon change-theme bx-sun'></i></div>
+	<div class="container">
+		<div class="card">
+			<div class="box">
+				<div class="content">
+					<div class="icon">
+						<i class='fa fa-paper-plane bx bxs-medal bx-tada' ></i>
+					</div>
+					<h3>BÁSICO</h3>
+					<h4><sup>$</sup> 100</h4>
+					<ul>
+						<li><i class="fa fa-check bx bxs-badge-check bx-tada" aria-hidden="true"></i> Clases en Full HD</li>
+						<li><i class="fa fa-check bx bxs-badge-check bx-tada"aria-hidden="true"></i> App para iOS y Android</li>
+						<li><i class="fa fa-check bx bxs-badge-check bx-tada"aria-hidden="true"></i> Acceso a más</li>
+						<li><i class="fa fa-times bx bxs-error-circle bx-tada"aria-hidden="true"></i> Acceso a los nuevos</li>
+						<li><i class="fa fa-times bx bxs-error-circle bx-tada"aria-hidden="true"></i> Mentorías semanales</li>
+					</ul>
+					<a href="#"> Comprar</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="box">
+				<div class="content">
+					<div class="icon">
+						<i class='fa fa-plane bx bxs-medal bx-tada' ></i>
+					</div>
+					<h3>EXPERTO</h3>
+					<h4><sup>$</sup> 400</h4>
+					<ul>
+						<li><i class="fa fa-check bx bxs-badge-check bx-tada" aria-hidden="true"></i> Clases en Full HD</li>
+
+						<li><i class="fa fa-check bx bxs-badge-check bx-tada"aria-hidden="true"></i> App para iOS y Android</li>
+
+						<li><i class="fa fa-check bx bxs-badge-check bx-tada"aria-hidden="true"></i> Acceso a más</li>
+
+						<li><i class="fa fa-check bx bxs-badge-check bx-tada"aria-hidden="true"></i> Acceso a los nuevos</li>
+						
+						<li><i class="fa fa-times bx bxs-error-circle bx-tada"aria-hidden="true"></i> Mentorías semanales</li>
+					</ul>
+					<a href="#"> Comprar</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="box">
+				<div class="content">
+					<div class="icon">
+						<i class='fa fa-paper-plane bx bxs-medal bx-tada' ></i>
+					</div>
+					<h3>PREMIUM</h3>
+					<h4><sup>$</sup> 1000</h4>
+					<ul>
+						<li><i class='fa fa-check bx bxs-badge-check bx-tada' ></i> Clases en Full HD</li>
+						<li><i class="fa fa-check bx bxs-badge-check bx-tada"aria-hidden="true"></i> App para iOS y Android</li>
+						<li><i class="fa fa-check bx bxs-badge-check bx-tada"aria-hidden="true"></i> Acceso a más</li>
+						<li><i class="fa fa-check bx bxs-badge-check bx-tada"aria-hidden="true"></i> Acceso a los nuevos</li>
+						<li><i class="fa fa-check bx bxs-badge-check bx-tada"aria-hidden="true"></i>Mentorías semanales</li>
+					</ul>
+					<a href="#"> Comprar</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		const body = document.querySelector('body');
+		document.querySelector('.toggle').onclick=function() {
+
+			let result = body.classList.toggle('light');
+			if (result) {
+			    document.querySelector(".toggle").innerHTML="<i class='bx bx-moon'></i>";
+			  } else {
+			   document.querySelector(".toggle").innerHTML="<i class='bx bx-moon change-theme bx-sun'></i>";
+			  }
+		}
+	</script>
+</body>
+</html>
